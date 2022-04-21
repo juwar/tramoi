@@ -1,0 +1,21 @@
+.song-item.header {
+  grid-row: 1/8;
+  grid-column: 5/13;
+  border-bottom: 1px solid #94a3b8;
+  /* background-image: url("../../img/header.png");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-blend-mode: overlay; */
+  opacity: 0.6;
+  /* margin-left: 20px; */
+}
+
+.song-item.header > * {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .song-item.header {
+    grid-column: 1/13;
+  }
+}
