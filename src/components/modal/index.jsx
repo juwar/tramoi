@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 const ModalComponent = props => {
-  const { show, handleClose, handleShow } = props;
+  const { show, handleClose, handleShow, handleClick } = props;
 
   const initialRef = React.useRef();
   const finalRef = React.useRef();
@@ -44,7 +44,7 @@ const ModalComponent = props => {
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3}>
+            <Button colorScheme="blue" mr={3} onClick={handleClick}>
               Save
             </Button>
             <Button onClick={handleClose}>Cancel</Button>
